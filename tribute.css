@@ -1,0 +1,55 @@
+html {
+    font-family: "Playfair Display", serif;
+    background: rgba(0,0,0,15%);
+  }
+  #title {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+  }
+  h4 {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 3px;
+  }
+  #img-div {
+    border: black;
+    padding: 10px;
+    background: white;
+    text-align: center;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Responsive image */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #tribute-info {
+    max-width: 650px;
+    width: 60%;
+    margin: auto;
+  }
+  header {
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    margin: 40px;
+    font-weight: bold;
+  }
+  ul {
+    padding: 10px;
+  }
+  li {
+    margin: 0.3em;
+  }
+  footer {
+    margin: auto;
+    width: 80%;
+    max-width: 750px;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
