@@ -1,0 +1,244 @@
+:root{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin: 0%;
+    padding: 0%;
+    background-color: #eeeeee;
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+ul{
+    list-style: none;
+}
+/*navigation*/
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: -10px;
+    width: 100%;
+    background-color: #eeeeee;
+}
+.logo{
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    padding-right: 40px;
+}
+nav li{
+    margin-left: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+/*email section*/
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+.email h1 {
+    font-size: 1.5em;
+}
+.email input[type='email']{
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+.email input[type='submit']{
+    max-width: 180px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    padding: 0 20px;
+    font-size: 1em;
+    font-weight: 900;
+    text-align: center;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #f1c40f;
+}
+/*features*/
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0;
+}
+.card{
+    display: flex;
+    align-items: center;
+}
+.card li{
+    width: 50vw;
+}
+.card i{
+    font-size: 60px;
+    padding-right: 20px;
+    color: darkorange;
+}
+.head{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.desc{
+    font-size: 0.9em;
+}
+/*How it works*/
+.how-it-works{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+
+}
+.how-it-works iframe{
+    max-width: 560px;
+    width: 100%;
+    height: 315px;
+}
+/* Pricing */
+.pricing {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pricetag {
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    min-width: 280px;
+    margin: 20px 5px;
+    border: 1px solid;
+    text-align: center;
+}
+.pricetag h1{
+    background-color: #dddddd;
+    padding: 15px 0;
+    font-size: 1em;
+    margin: 0%;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.info h2{
+    font-size: 1.5em;
+    margin: 0%;
+    padding: 0%;
+}
+.info li{
+    font-size: medium;
+    padding: 5px 0;
+    margin: 0%;
+}
+.info button{
+    border: 0;
+    margin: 15px 0;
+    padding: 0 20px;
+    height: 40px;
+    background-color: #f1c40f;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 2px;
+}
+/* Footer */
+footer{
+    position: absolute;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 100%;
+    align-items: flex-end;
+}
+.terms ul{
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+    padding-top: 20px;
+}
+.terms li{
+    padding-right: 20px;
+}
+.copyright{
+    color: grey;
+    font-size: 0.9em;
+    padding-top: 5px;
+    padding-right: 18px;
+}
+@media screen and (max-width: 850px){
+    img{
+        display: none;
+    }
+    .pricing{
+        flex-wrap: wrap;
+    }
+    nav{
+        justify-content: center;
+        padding: 0;
+    }
+    nav ul{
+        flex-direction: column;
+        font-size: 1.5em;
+        align-items: center;
+        width: 100%;
+    }
+    nav li{
+        padding-top: 10px;
+    }
+    nav a:hover{
+        color: lightslategrey;
+    }
+    .email{
+        padding-top: 150px;
+    }
+}
